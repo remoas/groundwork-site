@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Groundwork</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0d0d0f;
+      --surface: #17181d;
+      --surface-hi: #20222a;
+      --text: #f3f4f6;
+      --muted: #a1a1aa;
+      --accent: #3b82f6;
+      --line: rgba(255,255,255,0.08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", sans-serif;
+      background:
+        radial-gradient(circle at top, rgba(59,130,246,0.24), transparent 34%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    .wrap {
+      width: min(960px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 56px 0 80px;
+    }
+    .hero, .card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+      border: 1px solid var(--line);
+      border-radius: 28px;
+    }
+    .hero { padding: 40px; }
+    .eyebrow {
+      margin: 0 0 12px;
+      color: #7dd3fc;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(42px, 8vw, 72px);
+      line-height: 0.96;
+    }
+    .sub {
+      max-width: 680px;
+      margin: 20px 0 0;
+      font-size: 18px;
+      color: var(--muted);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+    }
+    .card { padding: 22px; }
+    .card h2 {
+      margin: 0 0 8px;
+      font-size: 18px;
+    }
+    .card p, .card li {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+    ul {
+      margin: 10px 0 0;
+      padding-left: 18px;
+    }
+    .footer {
+      margin-top: 24px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    a { color: #93c5fd; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <p class="eyebrow">Groundwork</p>
+      <h1>Run a loop. Claim the land.</h1>
+      <p class="sub">
+        Groundwork turns outdoor running into a live territory game. Track a loop, close it near where you started,
+        and the space you enclosed becomes yours on the map.
+      </p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>What it does</h2>
+        <p>Live run tracking, loop-based territory claims, rival takeovers, streaks, records, and a social feed.</p>
+      </article>
+      <article class="card">
+        <h2>How identity works</h2>
+        <p>Groundwork uses your iCloud account through CloudKit. No email sign-up and no separate password.</p>
+      </article>
+      <article class="card">
+        <h2>Built for launch</h2>
+        <p>V1 ships without ads, third-party analytics, or in-app purchases.</p>
+      </article>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Core features</h2>
+        <ul>
+          <li>Outdoor route tracking with pace, distance, time, cadence, and elevation</li>
+          <li>Loop closure and territory claiming on a live map</li>
+          <li>Push alerts when another runner takes your land</li>
+          <li>Records, streaks, achievements, and rivalry leaderboards</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h2>Need help?</h2>
+        <p>Support: <a href="https://openclaw.com/groundwork/support">openclaw.com/groundwork/support</a></p>
+        <p>Privacy: <a href="https://openclaw.com/groundwork/privacy">openclaw.com/groundwork/privacy</a></p>
+      </article>
+    </section>
+
+    <p class="footer">OpenClaw. Groundwork for iPhone.</p>
+  </main>
+</body>
+</html>

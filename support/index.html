@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Groundwork Support</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0d0d0f;
+      --surface: #17181d;
+      --text: #f3f4f6;
+      --muted: #a1a1aa;
+      --line: rgba(255,255,255,0.08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    main {
+      width: min(780px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 48px 0 80px;
+    }
+    .panel {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 28px;
+      margin-top: 18px;
+    }
+    h1, h2 { margin: 0 0 12px; }
+    p, li { color: var(--muted); }
+    ul { padding-left: 18px; }
+    a { color: #93c5fd; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Groundwork Support</h1>
+    <p>If something is broken, confusing, or missing, contact us and include your device model, iOS version, and what happened.</p>
+
+    <section class="panel">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:feedback@openclaw.com">feedback@openclaw.com</a></p>
+      <p>Review / urgent App Store issue: <a href="mailto:ben@openclaw.com">ben@openclaw.com</a></p>
+    </section>
+
+    <section class="panel">
+      <h2>Common issues</h2>
+      <ul>
+        <li>Runs and territories require Location access while using the app.</li>
+        <li>Background route tracking works only during an active run.</li>
+        <li>Health sync requires Apple Health permission.</li>
+        <li>Cloud features require iCloud to be available on the device.</li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2>Account deletion</h2>
+      <p>Groundwork supports in-app account deletion from the profile screen. Deleting your account permanently removes your profile, username, territories, and stored run history.</p>
+    </section>
+  </main>
+</body>
+</html>
